@@ -1,0 +1,115 @@
+.parent-algorithm-collection {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   grid-column-gap: 0px;
+   grid-row-gap: 0px;
+   font-family: "Space Grotesk", sans-serif;
+   font-size: 7rem;
+   height: 100vh;
+   align-items: center;
+   padding: 2rem 2rem 2rem 5rem;
+   background-color: #e8f0f9;
+}
+
+.div1-algorithm-collection {
+   grid-area: 1 / 1 / 2 / 5;
+}
+
+.div2-algorithm-collection {
+   grid-area: 2 / 1 / 3 / 4;
+}
+
+.div3-algorithm-collection {
+   height: 5rem;
+   width: 6rem;
+   border-radius: 40px;
+   border: 2px solid rgb(255, 204, 204);
+   background-image: url(https://mrhonner.com/wp-content/uploads/2014/09/Concentric-Octagons.jpg);
+   background-size: cover;
+   /* Cover the entire div */
+   background-position: center;
+   /* Center the background image */
+   background-repeat: no-repeat;
+
+   grid-area: 2 / 4 / 3 / 5;
+   animation: tilt-shaking 0.35s infinite;
+}
+
+.div4-algorithm-collection {
+   grid-area: 3 / 1 / 4 / 5;
+}
+
+@media (max-width: 1500px) {
+   .parent-algorithm-collection {
+      padding: 2rem 1rem 1rem 4rem;
+      font-size: 6rem;
+      height: 90vh;
+   }
+}
+
+@media (max-width: 1200px) {
+   .parent-algorithm-collection {
+      padding: 2rem 1rem 1rem 4rem;
+      font-size: 4.5rem;
+      height: 80vh;
+   }
+}
+
+@media (max-width: 900px) {
+   .parent-algorithm-collection {
+      padding: 2rem 1rem 1rem 2.5rem;
+      font-size: 3.5rem;
+      height: 70vh;
+   }
+}
+
+@media (max-width: 650px) {
+   .parent-algorithm-collection {
+      padding: 1.5rem 1rem 1rem 1.5rem;
+      font-size: 2rem;
+      height: 60vh;
+   }
+
+   .div3-algorithm-collection {
+      height: 3rem;
+      width: 4rem;
+      border-radius: 20px;
+   }
+}
+
+@keyframes tilt-shaking {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   25% {
+      transform: rotate(4deg);
+   }
+
+   50% {
+      transform: rotate(0eg);
+   }
+
+   75% {
+      transform: rotate(-4deg);
+   }
+
+   100% {
+      transform: rotate(0deg);
+   }
+}
+
+@media (max-width: 450px) {
+   .parent-algorithm-collection {
+      padding: 1.5rem 1rem 1rem 1rem;
+      font-size: 2rem;
+      height: 40vh;
+   }
+
+   .div3-algorithm-collection {
+      height: 3rem;
+      width: 4rem;
+      border-radius: 20px;
+   }
+}

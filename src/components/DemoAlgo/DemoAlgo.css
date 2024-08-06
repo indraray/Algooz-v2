@@ -1,0 +1,121 @@
+.overall-div-div {
+   background-color: #e8f0f9;
+   padding: 3rem 3rem 3rem 3rem;
+   font-family: "Space Grotesk", sans-serif;
+}
+
+.parent-demo-algorithm {
+   display: grid;
+   background-color: black;
+   color: white;
+   border-radius: 3rem;
+   grid-template-columns: repeat(5, 1fr);
+   grid-template-rows: repeat(4, 1fr);
+   grid-column-gap: 0px;
+   grid-row-gap: 0px;
+}
+
+
+.div1-demo {
+   padding-left: 2rem;
+
+   .dive-into {
+      padding-top: 2rem;
+      font-size: 3rem;
+   }
+
+   .dive-description {
+      padding-bottom: 1rem;
+   }
+   grid-area: 1 / 1 / 2 / 6;
+}
+
+.div2-demo {
+   border-radius: 0 0 0 2.8rem;
+   margin: 10px;
+   background-size: cover;
+   background-image: url(https://i.ibb.co/tKdLYqB/image.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   grid-area: 2 / 1 / 5 / 4;
+   position: relative;
+   .explore{
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+   }
+   .explore-button{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      padding: 10px 20px;
+      background-color: white;
+      color: black;
+      border: none;
+      border-radius: 25px;
+   }
+
+
+}
+
+.div3-demo {
+   background-color: rgb(155, 91, 214);
+   grid-area: 2 / 4 / 5 / 5;
+   margin-top: 10px;
+   background-image: url(https://img.freepik.com/free-vector/stream-binary-code-design-vector_53876-161368.jpg?t=st=1718798233~exp=1718801833~hmac=faec4a767a924b2bf536c42a380ba419e40c3fb44c06b8f7bba0661e04457549&w=360);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.div4-demo {
+   background-color: rgb(114, 219, 126);
+   border-radius: 0 0 2.8rem 0;
+   margin: 10px;
+   grid-area: 2 / 5 / 5 / 6;
+   background-image: url(https://i.ibb.co/QdRDQJ3/Binary-code-background-stock-photo-Image-of-computer-18787760.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 900px) {
+   .overall-div-div{
+      padding: 1.5rem ;
+   }
+   .parent-demo-algorithm{
+   border-radius: 2rem;
+   padding: 1rem 1rem;
+   }
+   .div1-demo{
+      padding-left: 1rem;
+
+      .dive-into {
+         padding-top: 1.5rem;
+         font-size: 2rem;
+      }
+   
+      .dive-description {
+         padding-bottom: 1rem;
+      }
+   }
+   .div2-demo {
+      grid-area: 2/1/5/6;
+      border-radius: 0 0 1.8rem 1.8rem;
+   }
+
+   .div3-demo,
+   .div4-demo {
+      display: none;
+   }
+
+}
+
+@media screen and (max-width: 450px) {
+   .parent-demo-algorithm{
+   border-radius: 1.5rem;
+
+   }
+   .overall-div-div {
+      padding: 2rem 0.5rem 2rem 0.5rem;  
+   }
+
+}

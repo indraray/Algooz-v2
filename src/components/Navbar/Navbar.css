@@ -1,0 +1,78 @@
+/* Basic Reset */
+
+/* #e8f0f9; background color */
+
+ 
+ .navbar {
+  z-index: 100;
+   background-color: #000000;
+   padding: 25px 80px;
+   font-family: "Space Grotesk", sans-serif;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-radius: 0 0 20px 20px;
+ }
+ 
+ .navbar-brand {
+   color: rgb(238, 74, 74);
+   font-size: 1.8em;
+ }
+ 
+ .menu-icon {
+   display: none;
+   cursor: pointer;
+ }
+ 
+ .nav-links {
+   list-style: none;
+   display: flex;
+   align-items: center;
+ }
+ 
+ .nav-item {
+   margin-left: 20px;
+ }
+ 
+ .nav-link {
+   color: white;
+   text-decoration: none;
+   font-size: 1em;
+ }
+ 
+ .nav-link:hover {
+   color: #ddd;
+ }
+ 
+ @media screen and (max-width: 768px) {
+   .menu-icon {
+     display: block;
+     color: white;
+   }
+ 
+   .nav-links {
+    z-index: 10;
+     position: absolute;
+     top: 108px;
+     left: 0;
+     border: 1px #1f7de7;
+     border-radius: 0 0 20px 20px;
+     width: 100%;
+     height: calc(100vh - 60px);
+     background-color: #141414;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     transition: transform 0.3s ease-in;
+     transform: translateX(-100%);
+   }
+ 
+   .nav-links.active {
+     transform: translateX(0);
+   }
+ 
+   .nav-item {
+     margin: 0;
+   }
+ }
+ 

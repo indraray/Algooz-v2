@@ -1,0 +1,21 @@
+.card-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+   gap: 16px;
+   padding: 3rem;
+ }
+ 
+ @media (max-width: 900px) {
+   .card-container {
+     grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+     padding: 1rem;
+   }
+ }
+ 
+ @media (max-width: 480px) {
+   
+   .card-container {
+     grid-template-columns: 1fr;
+   }
+ }
+ 
